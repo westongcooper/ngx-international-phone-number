@@ -8,7 +8,7 @@ This is re-written version (with enhancement) of [ng4-intl-phone](https://github
 To install this library, run:
 
 ```bash
-$ npm install ngx-international-phone-number --save
+$ npm install @coretech/ngx-international-phone-number --save
 ```
 
 ## Consuming your library
@@ -22,7 +22,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { InternationalPhoneNumberModule } from 'ngx-international-phone-number';
+import { InternationalPhoneNumberModule } from '@coretech/ngx-international-phone-number';
 
 @NgModule({
   declarations: [
