@@ -25,6 +25,12 @@ export class OnlyNumberDirective {
         (e.keyCode === 86 && e.ctrlKey === true) ||
         // Allow: Ctrl+X
         (e.keyCode === 88 && e.ctrlKey === true) ||
+        // Allow: +
+        (e.keyCode === 61 && e.shiftKey === true) ||
+        // Allow: <space>
+        (e.keyCode === 32) ||
+        // Allow: -
+        (e.keyCode === 173) ||
         // Allow: home, end, left, right
         (e.keyCode >= 35 && e.keyCode <= 39) ||
         // Allow plus button

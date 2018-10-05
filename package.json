@@ -16,18 +16,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nikhiln/ngx-international-phone-number"
+    "url": "https://github.com/westongcooper/ngx-international-phone-number"
   },
   "author": {
-    "name": "Nikhil Navadiya",
-    "email": "nikhil.navadiya@gmail.com"
+    "name": "Weston Cooper",
+    "email": "weston.cooper@idt.net"
   },
   "keywords": [
     "angular"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nikhiln/ngx-international-phone-number/issues"
+    "url": "https://github.com/westongcooper/ngx-international-phone-number/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
