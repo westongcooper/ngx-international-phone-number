@@ -74,6 +74,6 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "google-libphonenumber": "^3.0.9"
+    "libphonenumber-js": "^1.6.4"
   }
 }
