@@ -1,6 +1,6 @@
 import { Component, ElementRef, forwardRef, HostListener, Input, OnInit } from '@angular/core';
 import { ControlValueAccessor, FormControl, Validator, ValidationErrors, NG_VALIDATORS, NG_VALUE_ACCESSOR } from '@angular/forms';
-import * as glibphone from 'google-libphonenumber';
+import { parsePhoneNumber } from 'libphonenumber-js';
 import { CountryCode, Country } from './country.model';
 import { CountryService } from './country.service';
 
@@ -203,10 +203,9 @@ export class PhoneNumberComponent implements OnInit, ControlValueAccessor, Valid
 
         if (value) {
             // validating number using the google's lib phone
-            const phoneUtil = glibphone.PhoneNumberUtil.getInstance();
             try {
-                var phoneNumber = phoneUtil.parse(value);
-                let isValidNumber = phoneUtil.isValidNumber(phoneNumber);
+                var phoneNumber = parsePhoneNumber(value);
+                let isValidNumber = phoneNumber.isValid();
                 return isValidNumber ? null : validationError;
             } catch (ex) {
                 return validationError;
