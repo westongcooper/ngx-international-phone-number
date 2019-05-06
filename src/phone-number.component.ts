@@ -253,8 +253,8 @@ export class PhoneNumberComponent
         if (value) {
             // validating number using the google's lib phone
             try {
-                let phoneNumber = phoneUtil.parse(value);
-                let isValidNumber = phoneUtil.isValidNumber(phoneNumber);
+                let phoneNumber = parsePhoneNumber(value);
+                let isValidNumber = phoneNumber.isValid();
                 return isValidNumber ? null : validationError;
             } catch (ex) {
                 return validationError;
